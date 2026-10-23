@@ -29,3 +29,19 @@ const gradeStudents = (arr) => {
         };
     });
 };
+
+// Problem No.3: Time Conversion
+const timeConversion = (time) => {
+    let convertedHr = '';
+    const hour = time.split(':')[0];
+    const minute = time.split(':')[1];
+    const seconds = time.split(':')[2].slice(0, 2);
+
+    if (time.endsWith('AM')) {
+        convertedHr = Number(hour) === 12 ? '00' : hour;
+    } else {
+        convertedHr = Number(hour) === 12 ? '12' : Number(hour) + 12;
+    };
+
+    return `${convertedHr}:${minute}:${seconds}`;
+};
