@@ -55,3 +55,8 @@ const repeatStr = (n, s) => {
 const solution = (str) => {
   return str.split('').reverse().join('');
 };
+
+// Problem No.6: Sum of Positive
+const positiveSum = (arr) => {
+  return arr.reduce((acc, curr) => acc += curr > 0 ? curr : 0, 0)
+};
