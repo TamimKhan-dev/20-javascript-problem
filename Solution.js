@@ -1,5 +1,5 @@
 // Problem No.1: Staircase
-const stairCase = (n) => {
+const staircase = (n) => {
     let str = '';
 
     for (let i = 1; i <= n; i++) {
@@ -14,8 +14,8 @@ const stairCase = (n) => {
 };
 
 // Problem No.2: Grading Students
-const gradeStudents = (arr) => {
-    return arr.map((value) => {
+const gradeStudents = (grades) => {
+    return grades.map((value) => {
         if (value < 38) {
             return value
         } else {
@@ -31,17 +31,22 @@ const gradeStudents = (arr) => {
 };
 
 // Problem No.3: Time Conversion
-const timeConversion = (time) => {
+const timeConversion = (s) => {
     let convertedHr = '';
-    const hour = time.split(':')[0];
-    const minute = time.split(':')[1];
-    const seconds = time.split(':')[2].slice(0, 2);
+    const hour = s.split(':')[0];
+    const minute = s.split(':')[1];
+    const seconds = s.split(':')[2].slice(0, 2);
 
-    if (time.endsWith('AM')) {
+    if (s.endsWith('AM')) {
         convertedHr = Number(hour) === 12 ? '00' : hour;
     } else {
         convertedHr = Number(hour) === 12 ? '12' : Number(hour) + 12;
     };
 
     return `${convertedHr}:${minute}:${seconds}`;
+};
+
+// Problem No.4: String Repeat
+const repeatStr = (n, s) => {
+    return s.repeat(n);
 };
