@@ -12,3 +12,20 @@ const stairCase = (n) => {
 
     return str;
 };
+
+// Problem No.2: Grading Students
+const gradeStudents = (arr) => {
+    return arr.map((value) => {
+        if (value < 38) {
+            return value
+        } else {
+            const nextMultiple = (value - (value % 5)) + 5;
+
+            if (nextMultiple - value < 3) {
+                return nextMultiple;
+            } else {
+                return value
+            }
+        };
+    });
+};
