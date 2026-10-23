@@ -65,3 +65,8 @@ const positiveSum = (arr) => {
 const summation = (num) => {
     return (num * (num + 1)) / 2;
 };
+
+// Problem No.8: Convert a Boolean to a String
+const booleanToString = (b) => {
+    return String(b);
+};
