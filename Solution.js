@@ -60,3 +60,8 @@ const solution = (str) => {
 const positiveSum = (arr) => {
   return arr.reduce((acc, curr) => acc += curr > 0 ? curr : 0, 0)
 };
+
+// Problem No.7: Grasshopper — Summation
+const summation = (num) => {
+    return (num * (num + 1)) / 2;
+};
