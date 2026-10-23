@@ -50,3 +50,8 @@ const timeConversion = (s) => {
 const repeatStr = (n, s) => {
     return s.repeat(n);
 };
+
+// Problem No.5: Reversed Strings
+const solution = (str) => {
+  return str.split('').reverse().join('');
+};
