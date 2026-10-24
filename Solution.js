@@ -104,3 +104,19 @@ const maximumWealth = (accounts) => {
         customer.reduce((sum, money) => sum + money, 0)
     ));
 };
+
+// Problem No.12: Remove Duplicates from Sorted Array
+const removeDuplicates = (nums) => {
+    if (nums.length === 0) return 0;
+
+    let k = 1;
+
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] !== nums[k - 1]) {
+            nums[k] = nums[i];
+            k++;
+        }
+    }
+
+    return k;
+};
