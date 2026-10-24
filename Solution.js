@@ -139,7 +139,7 @@ const moveZeroes = (nums) => {
 };
 
 // Problem No.15: Merge Sorted Array
-var merge = function(nums1, m, nums2, n) {
+const merge = function(nums1, m, nums2, n) {
   let i = m - 1;
   let j = n - 1;
   let k = m + n - 1;
@@ -157,7 +157,7 @@ var merge = function(nums1, m, nums2, n) {
 };
 
 // Problem No.16: 3Sum
-var threeSum = function(nums) {
+const threeSum = function(nums) {
   nums.sort((a, b) => a - b);
 
   const result = [];
@@ -198,7 +198,7 @@ var threeSum = function(nums) {
 };
 
 // Problem No.17: Plus one
-var plusOne = function(digits) {
+const plusOne = function(digits) {
   for (let i = digits.length - 1; i >= 0; i--) {
     if (digits[i] < 9) {
       digits[i]++;
@@ -213,7 +213,7 @@ var plusOne = function(digits) {
 };
 
 // Problem No.18: Reverse String
-var reverseString = function(s) {
+const reverseString = function(s) {
   let left = 0;
   let right = s.length - 1;
 
@@ -223,4 +223,9 @@ var reverseString = function(s) {
     left++;
     right--;
   }
+};
+
+// Problem No.19: Length of Last Word
+const lengthOfLastWord = function(s) {
+  return s.trim().split(/\s+/).pop().length;
 };
