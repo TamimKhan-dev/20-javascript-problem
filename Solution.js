@@ -120,3 +120,8 @@ const removeDuplicates = (nums) => {
 
     return k;
 };
+
+// Problem No.13: Contains Duplicate
+const containsDuplicate = (nums) => {
+    return new Set(nums).size !== nums.length;
+};
