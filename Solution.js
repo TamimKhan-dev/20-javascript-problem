@@ -70,3 +70,20 @@ const summation = (num) => {
 const booleanToString = (b) => {
     return String(b);
 };
+
+// Problem No.9: Fizz Buzz
+const fizzBuzz = (n) => {
+    const arr = Array.from({ length: n }, (_, index) => index + 1);
+
+    return arr.map((i) => {
+       if ( i % 3 === 0 && i % 5 === 0) {
+        return "FizzBuzz"
+       } else if (i % 3 === 0) {
+        return "Fizz"
+       } else if (i % 5 === 0) {
+        return "Buzz"
+       } else {
+        return String(i);
+       };
+    });
+};
