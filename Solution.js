@@ -97,3 +97,10 @@ const runningSum = (nums) => {
         return sum;
     });
 };
+
+// Problem No.11: Richest Customer Wealth
+const maximumWealth = (accounts) => {
+    return Math.max(...accounts.map((customer) =>
+        customer.reduce((sum, money) => sum + money, 0)
+    ));
+};
