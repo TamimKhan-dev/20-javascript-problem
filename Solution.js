@@ -87,3 +87,13 @@ const fizzBuzz = (n) => {
        };
     });
 };
+
+// Problem No.10: Running Sum of 1D Array
+const runningSum = (nums) => {
+    let sum = 0;
+
+    return nums.map((value) => {
+        sum += value;
+        return sum;
+    });
+};
